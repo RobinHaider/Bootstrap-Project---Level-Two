@@ -38,15 +38,14 @@
                 <a href="#" class="text-white">Helen Smith</a>
               </div>
               <ul class="navbar-nav flex-column mt-4">
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 current"><i class="fas fa-home fa-lg text-light mr-3"></i> Dashboard</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 sidebar-link"><i class="fas fa-user fa-lg text-light mr-3"></i> Profile</a></li>  
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 sidebar-link"><i class="fas fa-envelope fa-lg text-light mr-3"></i> Inbox</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 sidebar-link"><i class="fas fa-shopping-cart fa-lg text-light mr-3"></i> Sales</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 sidebar-link"><i class="fas fa-chart-line fa-lg text-light mr-3"></i> Analytics</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 sidebar-link"><i class="fas fa-chart-bar fa-lg text-light mr-3"></i> Charts</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 sidebar-link"><i class="fas fa-table fa-lg text-light mr-3"></i> Tables</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 sidebar-link"><i class="fas fa-wrench fa-lg text-light mr-3"></i> Settings</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-white p-3 sidebar-link"><i class="fas fa-file-alt fa-lg text-light mr-3"></i> Documentation</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 current"><i class="fas fa-home fa-lg text-light mr-3"></i> Dashboard</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-user fa-lg text-light mr-3"></i> Profile</a></li>  
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-envelope fa-lg text-light mr-3"></i> Inbox</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-shopping-cart fa-lg text-light mr-3"></i> Sales</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-line fa-lg text-light mr-3"></i> Analytics</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-bar fa-lg text-light mr-3"></i> Charts</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-table fa-lg text-light mr-3"></i> Tables</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-wrench fa-lg text-light mr-3"></i> Settings</a></li>
               </ul>
             </div>
             <!-- end of sidebar -->
@@ -364,7 +363,7 @@
 
               <!-- task list -->
               <div class="col-xl-6 col-12">
-                <h4 class="text-muted p-3 mb-3">Task:</h4>
+                <h4 class="text-muted p-3 mb-2 mb-3">Task:</h4>
                 <div class="container-fluid bg-white">
                   <div class="row py-3 mb-4 task-border align-items-center">
                     <div class="col-1">
@@ -566,7 +565,53 @@
                 <div class="card">
                  <div class="card-body">
                     <h5 class="text-muted text-center mb-4">Quick Status Post</h5>
-                    
+                    <ul class="list-inline text-center py-4">
+                      <li class="list-inline-item  mr-4">
+                        <a href="#">
+                          <i class="fas fa-pencil-alt text-success"></i>
+                          <span class="text-muted h6">Status</span>
+                        </a>
+                      </li>
+                      <li class="list-inline-item mr-4">
+                        <a href="#">
+                          <i class="fas fa-camera text-info"></i>
+                          <span class="text-muted h6">Photo</span>
+                        </a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#">
+                          <i class="fas fa-map-marker-alt text-primary"></i>
+                          <span class="text-muted h6">Check-in</span>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control py-2 mb-3" placeholder="What's Your Status...">
+                        <button type="button" class="btn btn-info font-weight-bold text-uppercase btn-block py-2 mb-5">Submit Post</button>
+                      </div>
+                    </form>
+
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="card bg-light">
+                          <i class="far fa-calendar-alt fa-6x text-warning d-block m-auto py-3"></i>
+                          <div class="card-body">
+                            <p class="card-text text-center font-weight-bold text-uppercase">Mon, may 26</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-6">
+                        <div class="card bg-light">
+                          <i class="far fa-clock fa-6x text-danger d-block m-auto py-3"></i>
+                          <div class="card-body">
+                            <p class="card-text text-center font-weight-bold text-uppercase">3:50 AM</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                  </div>
                 </div>
               </div>
@@ -575,6 +620,38 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row border-top pt-3">
+              <div class="col-lg-6 text-center">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="#" class="text-dark">CodeAndCreate</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-dark">About</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-dark">Support</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-dark">Blog</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-lg-6 text-center">
+                <p>&copy; <span id="year"></span> Copyright. Made With <i class="fas fa-heart text-danger"></i> by <a href="https://www.linkedin.com/in/haider-ali-robin/" class="text-success" target="_blank">RobinHaider</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
